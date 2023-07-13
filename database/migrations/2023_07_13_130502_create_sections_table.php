@@ -21,8 +21,8 @@ return new class extends Migration
             $table -> datetime('departure_time');
             $table -> datetime('arrival_time');
             $table -> integer('number_of_wagons');
-            $table -> boolean('in_time');
-            $table -> boolean('deleted');
+            $table -> boolean('in_time') -> default(true);
+            $table -> boolean('deleted') -> default(false);
             $table -> timestamps();
         });
     }

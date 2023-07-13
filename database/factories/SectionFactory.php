@@ -17,7 +17,7 @@ class SectionFactory extends Factory
     public function definition()
     {
         return [
-            'company_name' => fake() -> name(),
+            'company_name' => fake() -> userName(),
             'departure_station' => fake() -> name(),
             'arrival_station' => fake() -> name(),
             'departure_time' => fake() -> dateTimeThisMonth(),
