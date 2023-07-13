@@ -15,11 +15,13 @@ class SectionsTableSeeder extends Seeder
      */
     public function run()
     {
-        $section = new Section();
-        $section -> company_name = 'Nome';
-        $section -> number_of_wagons = 5;
+        // $section = new Section();
+        // $section -> company_name = 'Nome';
+        // $section -> number_of_wagons = 5;
 
-        $section -> save();
+        // $section -> save();
+
+        section :: Factory() -> count(10) -> create();
 
     }
 }
